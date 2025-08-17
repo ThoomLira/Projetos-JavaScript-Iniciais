@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Churrasco - Thoomlira</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header com efeito de fogo -->
+        <header class="header">
+            <div class="fire-effect"></div>
+            <h1 class="title">
+                <span class="title-main">CALCULADORA DE CHURRASCO</span>
+                <span class="title-sub">by Thoomlira</span>
+            </h1>
+        </header>
+
+        <!-- Imagem principal do churrasco -->
+        <div class="hero-section">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Churrasco com amigos" class="hero-image">
+                <div class="image-overlay">
+                    <div class="grill-particles"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculadora -->
+        <div class="calculator-section">
+            <div class="calculator-card">
+                <div class="card-header">
+                    <i class="fas fa-fire-flame-curved"></i>
+                    <h2>Calculadora de Carne</h2>
+                </div>
+                
+                <div class="input-group">
+                    <label for="quantidade">Quantidade de Pessoas:</label>
+                    <div class="input-container">
+                        <input type="number" id="quantidade" placeholder="Digite o número de pessoas" min="1">
+                        <div class="input-border"></div>
+                    </div>
+                </div>
+
+                <button class="calculate-btn" onclick="calcularChurrasco()">
+                    <span class="btn-text">Calcular</span>
+                    <div class="btn-glow"></div>
+                </button>
+
+                <div class="result-container" id="resultado">
+                    <div class="result-card hidden" id="resultCard">
+                        <div class="result-icon">
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <div class="result-text">
+                            <h3>Resultado</h3>
+                            <p id="resultText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informações adicionais -->
+        <div class="info-section">
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Para 2 pessoas ou menos</h3>
+                    <p>400g por pessoa</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Para 3+ pessoas</h3>
+                    <p>400g por pessoa (em Kg)</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Sem pessoas?</h3>
+                    <p>Chame a galera!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Thoomlira - Calculadora de Churrasco</p>
+            <div class="social-links">
+                <a href="https://github.com/ThoomLira" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/thomas-lira-santos-91222038/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/thoomlira/" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
