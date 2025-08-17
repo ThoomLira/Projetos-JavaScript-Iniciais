@@ -2,7 +2,7 @@
 ///////////////////////Calculadora de Churrasco/////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-/////Linguange: Portugues BR
+/////Language: Portugues BR
 
 alert('Aplicativo desenvolvido para calcular a quantidade de Carne/Linguiça por pessoas para seu churrasco! \n DEV. Thoomlira')
 
