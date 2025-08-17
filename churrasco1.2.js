@@ -9,7 +9,7 @@ alert('Aplicativo desenvolvido para calcular a quantidade de Carne/Linguiça por
 console.log('Seja bem vindos a Calculadora de Churrasco')
 
 let quantidade = prompt('Insira a quantidade de pessoas para seu churrasco!')
-const gramas = 400
+const gramas = .400
 let total = (quantidade * gramas)
 let mensagem = (`Sua quantidade de é de ${total} de Carne/Linguiça para pessoa!`)
 
